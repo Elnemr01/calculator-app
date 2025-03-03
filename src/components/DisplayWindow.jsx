@@ -1,10 +1,10 @@
 import React from 'react'
 
-const DisplayWindow = () => {
+const DisplayWindow = ({expression,result}) => {
     return (
         <div className='displayWindow'>
-            <p className="expression">180+50/3</p>
-            <p className="result">result</p>
+            <p className="expression">{expression}</p>
+            <p className="result">{result}</p>
         </div>
     )
 }
