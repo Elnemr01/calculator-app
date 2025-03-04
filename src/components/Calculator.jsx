@@ -23,6 +23,7 @@ const Calculator = () => {
         if(expression.length!==0) {
             try {
                 let compute=eval(expression);
+                compute=parseFloat(compute.toFixed(4));
                 setResult(compute);
             } catch (error) {
                 setResult("Error!!!!!!!!!!!!!!!!!");
